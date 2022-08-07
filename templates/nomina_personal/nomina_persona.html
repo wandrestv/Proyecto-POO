@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+      <div class="container-fluid">
+       <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2">
+          <div class="col">
+            <div class="card" style="height:15rem">
+              <img src="{% static 'img/cards/administracion.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+              <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'empleado' %}">
+                  <h5 class="card-title text-success">Pago a Empleados</h5>
+                </a>
+                <p class="card-text">Se genera una nueva nómina del empleado</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="height:15rem" >
+              <img src="{% static 'img/cards/administracion-del-dinero.png' %}" class="img-fluid  mx-auto d-block" style="width:35%">
+               <div class="card-body text-center">
+                <a class="text-decoration-none" href="{% url 'proveedor' %}">
+                  <h5 class="card-title text-success">Pago a Proveedores</h5>
+                </a>
+                <p class="card-text">Se genera una nueva nómina del proveedor</p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+       </div>
+      </div>
+{% endblock %}

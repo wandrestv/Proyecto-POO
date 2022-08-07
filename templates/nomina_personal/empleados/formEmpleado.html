@@ -1,0 +1,107 @@
+{% extends 'nomina_personal/formulario_nomina_pro.html' %}
+{% load static %}
+
+{% block controls %}
+    <div class="col-md-6">
+        <label  for="inputEmail4" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="inputEmail4" placeholder="Daniel Vera" disabled=»disabled»>
+    </div>
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Cédula</label>
+        <input type="number" class="form-control" id="inputPassword4" placeholder="0914123458" disabled=»disabled»>
+    </div>
+    <div class="col-6">
+        <label for="inputAddress" class="form-label">Teléfono</label>
+        <input type="number" class="form-control" id="inputAddress" placeholder="0912365478" disabled=»disabled»>
+    </div>
+    <div class="col-6">
+        <label for="inputAddress2" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="inputAddress2" placeholder="dverap@unemi.edu.ec" disabled=»disabled»>
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Cargo</label>
+        <select id="inputState" class="form-select">
+            <option selected>Programador</option>
+            <option>Programador</option>
+            <option>Asistente</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Departamento</label>
+        <select id="inputState" class="form-select">
+            <option selected>Sistemas</option>
+            <option>Sistemas</option>
+            <option>Contabilidad</option>
+        </select>
+    </div>
+    <hr>
+    <div class="col-md-6">
+    <h4 align="center">Ingresos</h4>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Sueldo base:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Décimo tercero:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Décimo cuarto:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Transporte:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Horas extra 50%:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Horas extra 100%:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-6">
+    <h4 align="center">Egresos</h4>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Seguro Social:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Préstamo:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Multas:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Faltas:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

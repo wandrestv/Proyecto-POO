@@ -1,0 +1,49 @@
+{% extends 'nomina_personal/consulta_nomina.html' %}
+{% load static %}
+
+{% block columns %}
+    <tr>
+        <th scope="col" style="width: 5%;">Nro</th>
+        <th scope="col" style="width: 20%;">Nombre</th>
+        <th scope="col" style="width: 10%;">Cedula</th>
+        <th scope="col" style="width: 20%;">Departamento</th>
+        <th scope="col" style="width: 10%;">Cargo</th>
+        <th scope="col" style="width: 10%;">Teléfono</th>
+        <th scope="col" style="width: 18%;">Opciones</th>
+    </tr>
+{% endblock %}
+
+{% block rows %}
+  <tr>
+      <td>1</td>
+      <td>Daniel Vera</td>
+      <td>0914123458</td>
+      <td>Sistemas</td>
+      <td>Programador</td>
+      <td>0912365478</td>
+      <td class="acciones">
+        <a href="{{ crear_url }}" class="btn btn-primary btn-flat btnTest">
+            📝 Nuevo pago
+        </a>
+        <a href="{% url 'consultaempleado' %}" class="btn btn-info btn-flat btnTest">
+            🔍 Consultar pago
+        </a>
+      </td>
+  </tr>
+    <tr>
+      <td>2</td>
+      <td>Erick Bohorquez</td>
+      <td>0914123458</td>
+      <td>Contabilidad</td>
+      <td>Asistente</td>
+      <td>0956485796</td>
+      <td class="acciones">
+        <a href="{{ crear_url }}" class="btn btn-primary btn-flat btnTest">
+            📝 Nuevo pago
+        </a>
+        <a href="{% url 'consultaempleado' %}" class="btn btn-info btn-flat btnTest">
+            🔍 Consultar pago
+        </a>
+      </td>
+  </tr>
+{% endblock %}

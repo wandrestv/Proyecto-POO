@@ -1,0 +1,60 @@
+{% extends 'nomina_personal/formulario_nomina_emp.html' %}
+{% load static %}
+
+{% block controls %}
+    <div class="col-md-6">
+        <label  for="inputEmail4" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="inputEmail4" placeholder="Daniel Vera" disabled=»disabled»>
+    </div>
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Cédula</label>
+        <input type="number" class="form-control" id="inputPassword4" placeholder="0914123458" disabled=»disabled»>
+    </div>
+    <div class="col-6">
+        <label for="inputAddress" class="form-label">Teléfono</label>
+        <input type="number" class="form-control" id="inputAddress" placeholder="0912365478" disabled=»disabled»>
+    </div>
+    <div class="col-6">
+        <label for="inputAddress2" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="inputAddress2" placeholder="dverap@unemi.edu.ec" disabled=»disabled»>
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Cargo</label>
+        <select id="inputState" class="form-select">
+            <option selected>Programador</option>
+            <option>Programador</option>
+            <option>Asistente</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">Departamento</label>
+        <select id="inputState" class="form-select">
+            <option selected>Sistemas</option>
+            <option>Sistemas</option>
+            <option>Contabilidad</option>
+        </select>
+    </div>
+    <hr>
+    <div class="col-6">
+        <label for="inputAddress" class="form-label">Periodo a buscar:</label>
+        <input type="date" class="form-control" id="inputAddress" placeholder="0912365478" >
+        <button type="button" class="btn btn-secondary">Buscar</button>
+    </div>
+
+
+
+    <div class="col-6">
+
+    </div>
+    <div class="col-md-4">
+        <div class="mb-2">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Total a pagar:</label>
+            <div class="col-sm-6 ">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 800.00">
+            </div>
+        </div>
+
+    </div>
+
+
+{% endblock %}

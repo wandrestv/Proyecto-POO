@@ -1,0 +1,36 @@
+{% extends 'nomina_personal/formulario_nomina_emp.html' %}
+{% load static %}
+
+{% block controls %}
+    <div class="col-md-6">
+        <label  for="inputEmail4" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">RUC</label>
+        <input type="number" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-6">
+        <label for="inputAddress" class="form-label">Teléfono</label>
+        <input type="number" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-6">
+        <label for="inputAddress2" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+
+    <hr>
+    <h2></h2>
+    <div class="col-md-6">
+        <div class="mb-2 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Total a pagar por periodo:</label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="inputPassword" placeholder="$ 00.00">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+{% endblock %}
