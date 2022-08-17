@@ -10,7 +10,7 @@ def empleado(request):
 
 def pagoEmpleado(request):
     data = {
-        'titulo' : 'Pago de Empleados',
+        'titulo' : 'Nómina de Pago',
         'crear_url':'/pagoempleado',
         'action':'add',
         'listar_url': '/empleado',
