@@ -19,7 +19,7 @@ def pagoEmpleado(request):
 
 def consultaEmpleado(request):
     data = {
-        'titulo' : 'Consulta Pago de Empleados',
+        'titulo' : 'Consulta Nómina de Pago',
         'crear_url':'/consultaempleado',
         'action':'add',
         'listar_url': '/empleado',
